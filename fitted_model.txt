@@ -1,0 +1,33 @@
+Source: c:\Users\Dell G3\Desktop\Код към дипломна работа\HPI_2016Q1_2025Q4.csv
+Observations: 40
+Last actual: 2025Q4
+Chosen ARIMA: (1, 1, 1) with trend=n
+BIC=202.964108; AIC=197.973423
+converged=True
+Backtest start: 2023Q1; one step; 12 origins
+Ljung-Box lag4 p=0.153056
+
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:              hpi_total   No. Observations:                   40
+Model:               SARIMAX(1, 1, 1)   Log Likelihood                 -95.987
+Date:                Wed, 04 Nov 2026   AIC                            197.973
+Time:                        06:52:26   BIC                            202.964
+Sample:                    03-31-2016   HQIC                           199.764
+                         - 12-31-2025                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.9894      0.041     23.964      0.000       0.908       1.070
+ma.L1         -0.7535      0.216     -3.495      0.000      -1.176      -0.331
+sigma2         7.6464      1.405      5.444      0.000       4.893      10.400
+===================================================================================
+Ljung-Box (L1) (Q):                   1.56   Jarque-Bera (JB):                14.46
+Prob(Q):                              0.21   Prob(JB):                         0.00
+Heteroskedasticity (H):              16.28   Skew:                             0.35
+Prob(H) (two-sided):                  0.00   Kurtosis:                         5.90
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
